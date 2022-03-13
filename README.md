@@ -1,5 +1,6 @@
 # Foundation Topbar WordPress Nav Walker
 An WordPress Navwalker object that displays Foundation CSS framework's Topbar Nav Menu
+
 [Foundation-Topbar-WordPress-Nav-Walker](https://github.com/nisarul-media/Foundation-Topbar-WordPress-Nav-Walker)
 
 ## Get a Foundation Topbar Like this:
@@ -8,9 +9,8 @@ An WordPress Navwalker object that displays Foundation CSS framework's Topbar Na
 
 ## To use:
 
-Step-0: It is an optional step if you didn't setup Foundation Framework in your theme yet. Enqueue necessary CSS and JS files to get Foundation Framework and running.
-
-function.php
+`Step-0:` It is an optional step if you didn't setup Foundation Framework in your theme yet. Enqueue necessary CSS and JS files to get Foundation Framework and running.
+#### functions.php
 ```php
 add_action( 'wp_enqueue_scripts', function() {
     // CSS
@@ -23,21 +23,22 @@ add_action( 'wp_enqueue_scripts', function() {
     wp_enqueue_script( 'my-script', get_stylesheet_directory_uri() . '/js/app.js', array( 'jq', 'what-input', 'foundation-script' ), '1.0.0', true );
 } );
 ```
+<br>
 
-Setp-1: Copy and paste the [Foundation_Top_Bar_Nav_Walker](https://github.com/AlexWebLab/bootstrap-5-wordpress-navbar-walker/blob/main/functions.php) class into the functions.php file of your theme;
+`Setp-1:` Copy and paste the [Foundation_Top_Bar_Nav_Walker](https://github.com/AlexWebLab/bootstrap-5-wordpress-navbar-walker/blob/main/functions.php) class into the functions.php file of your theme;
+<br><br>
 
-Setp-2: Register a new menu by adding the follow code into the functions.php file of your theme:
-
-functions.php
+`Setp-2:` Register a new menu by adding the follow code into the functions.php file of your theme:
+#### functions.php
 ```php
 add_action( 'after_setup_theme', function () {
     register_nav_menu( 'main-menu', 'Header Navigation Menu' );
 } );
 ```
+<br>
 
-Setp-3: Add the following html code in your header.php file or wherever you want to place your menu:
-
-header.php
+`Setp-3:` Add the following html code in your header.php file or wherever you want to place your menu:
+#### header.php
 ```html
 ...
 <header>
@@ -73,3 +74,4 @@ header.php
 </header>
 ...
 ```
+<br>
