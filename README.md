@@ -25,10 +25,10 @@ add_action( 'wp_enqueue_scripts', function() {
 ```
 <br>
 
-`Setp-1:` Copy and paste the [Foundation_Top_Bar_Nav_Walker](https://github.com/AlexWebLab/bootstrap-5-wordpress-navbar-walker/blob/main/functions.php) class into the functions.php file of your theme;
+`Setp-1:` Copy and paste the [Foundation_Top_Bar_Nav_Walker](https://github.com/nisarul-media/Foundation-Topbar-WordPress-Nav-Walker/blob/main/functions.php) class into the functions.php file of your theme.
 <br><br>
 
-`Setp-2:` Register a new menu by adding the follow code into the functions.php file of your theme:
+`Setp-2:` Register a new menu by adding the follow code into the functions.php file of your theme.
 #### functions.php
 ```php
 add_action( 'after_setup_theme', function () {
@@ -37,7 +37,7 @@ add_action( 'after_setup_theme', function () {
 ```
 <br>
 
-`Setp-3:` Add the following html code in your header.php file or wherever you want to place your menu:
+`Setp-3:` Add the following html code in your header.php file or wherever you want to place your menu.
 #### header.php
 ```html
 ...
