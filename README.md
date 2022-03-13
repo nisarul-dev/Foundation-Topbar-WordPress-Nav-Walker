@@ -3,7 +3,8 @@ An WordPress Navwalker object that displays Foundation CSS framework's Topbar Na
 [Foundation-Topbar-WordPress-Nav-Walker](https://github.com/nisarul-media/Foundation-Topbar-WordPress-Nav-Walker)
 
 ## Get a Foundation Topbar Like this:
-<!-- Attach to tobar screenshot -->
+![Foundation Top Bar Screenshot](https://user-images.githubusercontent.com/65971192/158076929-e963bc8c-ae8d-4ef9-8f7f-1b8553da76fa.jpg)
+
 
 ## To use:
 
