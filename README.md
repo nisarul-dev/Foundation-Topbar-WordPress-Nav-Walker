@@ -9,7 +9,7 @@ An WordPress Navwalker object that displays Foundation CSS framework's Topbar Na
 
 ## To use:
 
-`Step-0:` It is an optional step if you didn't setup Foundation Framework in your theme yet. Enqueue necessary CSS and JS files to get Foundation Framework and running.
+`Step-0:` It is an optional step if you didn't setup Foundation Framework in your theme yet. Enqueue necessary CSS and JS files to get Foundation Framework up and running.
 #### functions.php
 ```php
 add_action( 'wp_enqueue_scripts', function() {
