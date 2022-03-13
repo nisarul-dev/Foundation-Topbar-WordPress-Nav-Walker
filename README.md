@@ -43,33 +43,33 @@ header.php
 <header>
     <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
         <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-        <div class="title-bar-title menu"><a href="#" class="menu-text">Site Title</a></div>
+        <div class="title-bar-title menu"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="menu-text" rel="home"><?php bloginfo( 'name' ); ?></a></div>
     </div>
 
     <div class="top-bar" id="responsive-menu">
         <div class="menu hide-for-small-only">
-            <a href="Hello" class="menu-text">Site Title</a>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="menu-text" rel="home"><?php bloginfo( 'name' ); ?></a>
         </div>
 
         <div class="top-bar-left">
-            <?php wp_nav_menu( [
+            <?php wp_nav_menu([
                 'theme-location' => 'main-menu',
                 'container'      => false,
                 'menu_class'     => 'menu',
-                'items_wrap'     => '<ul id="%1$s" class="dropdown %2$s" data-dropdown-menu>%3$s</ul>',
+                'items_wrap'     => '<ul id="%1$s" class="dropdown %2$s"  data-dropdown-menu>%3$s</ul>',
                 'walker'         => new Foundation_Top_Bar_Nav_Walker(),
-            ] ); ?>
+            ]); ?>
         </div>
 
         <div class="top-bar-right">
-            <ul class="menu">
-                <li><input type="search" placeholder="Search"></li>
-                <li><button type="button" class="button">Search</button></li>
-            </ul>
+            <form action="<?php echo esc_url( home_url( '/' ) ); ?>" method="GET">
+                <ul class="menu">
+                    <li><input type="search" placeholder="Search" value="<?php echo get_search_query(); ?>" name="s"></li>
+                    <li><button type="submit" class="button">Search</button></li>
+                </ul>
+            </form>
         </div>
     </div>
 </header>
 ...
 ```
-
-
