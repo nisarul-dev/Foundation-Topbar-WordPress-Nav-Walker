@@ -1,3 +1,5 @@
+<?php
+
 /**
 * Foundation Top Bar Nav Walker
 */
